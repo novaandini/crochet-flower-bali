@@ -99,7 +99,7 @@ const products = [
     name: 'Blue Theme Bouquet',
     href: '#',
     price: '$48',
-    imageSrc: 'src/assets/products/blue-theme-bouquet.jpg',
+    imageSrc: '/src/assets/products/blue-theme-bouquet.jpg',
     imageAlt: 'Blue theme bouquet',
   },
   {
@@ -107,7 +107,7 @@ const products = [
     name: 'Sunflower Bouquet',
     href: '#',
     price: '$35',
-    imageSrc: 'src/assets/products/sunflower-bouquet.jpg',
+    imageSrc: '/src/assets/products/sunflower-bouquet.jpg',
     imageAlt: 'Sunflower Bouquet',
   },
   {
@@ -115,7 +115,7 @@ const products = [
     name: 'Josephine Basket',
     href: '#',
     price: '$89',
-    imageSrc: 'src/assets/products/josephine-basket.jpg',
+    imageSrc: '/src/assets/products/josephine-basket.jpg',
     imageAlt: 'Josephine Basket',
   },
   {
@@ -123,7 +123,7 @@ const products = [
     name: 'Small Bouquet',
     href: '#',
     price: '$35',
-    imageSrc: './assets/products/small-bouquet.jpg',
+    imageSrc: '/src/assets/products/small-bouquet.jpg',
     imageAlt: 'Small bouquet',
   },
   // More products...
