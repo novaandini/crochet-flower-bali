@@ -46,21 +46,27 @@
       <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
         <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
       </div>
-      <img src="./assets/lily.jpg" alt="" srcset="" class="absolute -z-20 top-20 md:top-10 md:right-2/3 md:left-auto md:h-full left-0 brightness-50 md:filter-none">
-      <img src="./assets/corgi.jpg" alt="" srcset="" class="absolute lg:-bottom-20 md:-bottom-14 lg:right-20 md:right-0 lg:w-1/5 md:w-1/4 hidden md:block">
+      <img src="./assets/lily.jpg" alt="" srcset="" class="absolute -z-10 top-20 md:top-10 md:right-2/3 md:left-auto md:h-full left-0 brightness-50 md:filter-none">
+      <img src="./assets/corgi.jpg" alt="" srcset="" class="absolute z-10 lg:-bottom-20 md:-bottom-14 lg:right-20 md:right-0 lg:w-1/5 md:w-1/4 hidden md:block">
       <div class="lg:py-40 py-28">
         <div class="flex justify-center items-center justify-self-end md:w-2/3">
           <div class="text-left">
             <h1 class="text-balance text-5xl font-semibold tracking-tight text-white md:text-gray-900 sm:text-7xl">Crochet Flower Bali</h1>
             <p class="mt-8 text-pretty text-justify text-lg font-medium text-gray-200 md:text-gray-500 sm:text-xl/8">Lengkapi keseharian Anda dengan produk lucu penuh warna dari katalog kami!</p>
             <div class="mt-5 flex items-center justify-left gap-x-6">
-              <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Lihat Katalog</a>
+              <a href="#products" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Lihat Katalog</a>
             </div>
           </div>
         </div>
       </div>
-      <section id="about" class="bg-indigo-600 z-0 md:-z-10 relative isolate p-6 lg:p-8">
-    <div class="flex flex-col justify-center items-center text-center min-h-screen">
+      <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+        <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
+      </div>
+    </div>
+    
+  </div>
+  <section id="about" class="bg-indigo-600 relative z-10 md:-z-10 isolate p-6 lg:p-8">
+    <div class="flex flex-col justify-center items-center -z-10 text-center min-h-screen">
       <div class="text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl order-first">
         About Us
       </div>
@@ -83,11 +89,6 @@
       </div>
     </div>
   </section>
-      <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-        <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
-      </div>
-    </div>
-  </div>
 
 </template>
 
@@ -122,7 +123,7 @@ const products = [
     name: 'Small Bouquet',
     href: '#',
     price: '$35',
-    imageSrc: 'src/assets/products/small-bouquet.jpg',
+    imageSrc: './assets/products/small-bouquet.jpg',
     imageAlt: 'Small bouquet',
   },
   // More products...
@@ -146,9 +147,9 @@ import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const navigation = [
-  { name: 'About', href: '#' },
-  { name: 'Product', href: '#' },
-  { name: 'Contact', href: '#' },
+  { name: 'About', href: '#about' },
+  { name: 'Product', href: '#products' },
+  { name: 'Contact', href: '#contact' },
 ]
 
 const mobileMenuOpen = ref(false)
