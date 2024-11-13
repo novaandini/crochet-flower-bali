@@ -5,7 +5,7 @@
         <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
-            <img class="h-14 w-auto" src="/src/assets/logo.jpg" alt="" />
+            <div class="w-auto text-xl/7 uppercase font-semibold text-gray-900 hover:bg-gray-50">Crochet Flower Bali</div>
           </a>
         </div>
         <div class="flex lg:hidden">
@@ -24,7 +24,7 @@
           <div class="flex items-center justify-between">
             <a href="#" class="-m-1.5 p-1.5">
               <span class="sr-only">Your Company</span>
-              <img class="h-14 w-auto" src="/src/assets/logo.jpg" alt="" />
+              <div class="w-auto text-lg/7 uppercase font-semibold text-gray-900 hover:bg-gray-50">Crochet Flower Bali</div>
             </a>
             <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" @click="mobileMenuOpen = false">
               <span class="sr-only">Close menu</span>
@@ -65,13 +65,13 @@
     </div>
     
   </div>
-  <section id="about" class="bg-indigo-600 relative z-10 md:-z-10 isolate p-6 lg:p-8">
-    <div class="flex flex-col justify-center items-center -z-10 text-center min-h-screen">
-      <div class="text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl order-first">
-        About Us
-      </div>
-      <div class="bg-[url('/flower.jpg')] h-36 w-full mt-8 bg-[center_-12rem] md:bg-center md:row-span-3"></div>
-      <div class="mt-8 text-pretty text-lg font-medium text-gray-200 sm:text-xl/8 order-last">Flower Crochet Bali menyediakan berbagai jenis bunga rajut yang lucu dan penuh warna. Temukan sentuhan spesial yang membuat hari-hari Anda lebih berwarna dengan Flower Crochet Bali!</div>
+  <section id="about" class="bg-indigo-600 relative z-10 md:-z-10 isolate p-6 lg:p-8 flex flex-col justify-center items-center  min-h-screen">
+    <div class="text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl order-first">
+      About Us
+    </div>
+    <div class="flex flex-col md:flex-row justify-center items-center -z-10 text-center md:h-2/3 lg:h-4/5 lg:px-36">
+      <div class="bg-[url('/flower.jpg')] h-36 md:h-72 lg:h-96 w-full md:w-1/2 lg:w-1/3 mt-8 bg-[center_-12rem] md:bg-[center_-8rem]"></div>
+      <div class="mt-8 text-pretty text-lg font-medium text-gray-200 sm:text-xl/8 order-last md:w-1/2 md:text-left md:ml-5 lg:text-3xl">Flower Crochet Bali menyediakan berbagai jenis bunga rajut yang lucu dan penuh warna. Temukan sentuhan spesial yang membuat hari-hari Anda lebih berwarna dengan Flower Crochet Bali!</div>
     </div>
   </section>
 
@@ -79,7 +79,7 @@
     <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
       <h2 class="text-balance text-5xl font-semibold text-center tracking-tight text-black sm:text-7xl">Products</h2>
       <div class="grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 mt-8">
-        <a v-for="product in products" :key="product.id" :href="product.href" class="group">
+        <a v-for="product in products" :key="product.id" href="https://api.whatsapp.com" class="group">
           <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
             <img :src="product.imageSrc" :alt="product.imageAlt" class="h-full w-full object-cover object-center group-hover:opacity-75" />
           </div>
@@ -89,6 +89,17 @@
       </div>
     </div>
   </section>
+
+  <section id="contact" class="bg-indigo-600 min-h-screen flex justify-center items-center flex-col-reverse p-16 lg:px-96">
+    <div class="mt-8 text-pretty text-2xl md:text-4xl text-center font-medium text-gray-200 sm:text-xl/8 order-last">Punya ide yang lebih baik? Hubungi kami pada kontak berikut!</div>
+    <div class="mt-5 flex items-center justify-center">
+      <a href="https://api.whatsapp.com" class="rounded-md md:text-lg bg-white px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-200">Kontak WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="bg-black text-center py-2 text-white">Copyright 2024 | Crochet Flower Bali</div>
+  </footer>
 
 </template>
 
