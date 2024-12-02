@@ -79,7 +79,7 @@
     <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
       <h2 class="text-balance text-5xl font-semibold text-center tracking-tight text-black sm:text-7xl">Products</h2>
       <div class="grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 mt-8">
-        <a v-for="product in products" :key="product.id" href="https://api.whatsapp.com" class="group">
+        <a v-for="product in products" :key="product.id" :href="`https://api.whatsapp.com/send/?phone=621234567890&text=Halo,%20saya%20ingin%20memesan%20produk%20${product.name}`" target="_blank"class="group">
           <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
             <img :src="product.imageSrc" :alt="product.imageAlt" class="h-full w-full object-cover object-center group-hover:opacity-75" />
           </div>
@@ -93,7 +93,7 @@
   <section id="contact" class="bg-indigo-600 min-h-screen flex justify-center items-center flex-col-reverse p-16 lg:px-96">
     <div class="mt-8 text-pretty text-2xl md:text-4xl text-center font-medium text-gray-200 sm:text-xl/8 order-last">Punya ide yang lebih baik? Hubungi kami pada kontak berikut!</div>
     <div class="mt-5 flex items-center justify-center">
-      <a href="https://api.whatsapp.com" class="rounded-md md:text-lg bg-white px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-200">Kontak WhatsApp</a>
+      <a href="https://api.whatsapp.com/send/?phone=621234567890" class="rounded-md md:text-lg bg-white px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-200">Kontak WhatsApp</a>
     </div>
   </section>
 
@@ -118,7 +118,7 @@ const products = [
     name: 'Sunflower Bouquet',
     href: '#',
     price: '$35',
-    imageSrc: '/src/assets/products/sunflower-bouquet.jpg',
+    imageSrc: require('@/assets/products/sunflower-bouquet.jpg'),
     imageAlt: 'Sunflower Bouquet',
   },
   {
