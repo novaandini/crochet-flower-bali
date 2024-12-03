@@ -118,7 +118,7 @@ const products = [
     name: 'Sunflower Bouquet',
     href: '#',
     price: '$35',
-    imageSrc: require('@/assets/products/sunflower-bouquet.jpg'),
+    imageSrc: '/src/assets/products/sunflower-bouquet.jpg',
     imageAlt: 'Sunflower Bouquet',
   },
   {
